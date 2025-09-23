@@ -1,18 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NFT Preview Card</title>
+  <title>A Maldição da Floresta Sombria</title>
+  <!-- Link para o CSS -->
   <link rel="stylesheet" href="styles.css" />
+  <!-- Link para animações -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
-  <main class="card">
-    <img src="images/img1.png" alt="NFT image" class="card-image" />
-    <div class="card-content">
-      <h1>Unique NFT</h1>
-      <p>This is a preview of a spooky NFT card.</p>
+
+  <!-- Header -->
+  <header class="header">
+    <img src="images/logo.png" alt="Logo do Projeto" class="logo" />
+    <h1>A Maldição da Floresta Sombria</h1>
+    <p>Você terá coragem para encarar o desconhecido?</p>
+  </header>
+
+  <!-- Card List -->
+  <main class="card-list">
+    <!-- Card 1 -->
+    <div class="story-card animate__animated animate__fadeInUp">
+      <img src="images/img1.png" alt="Card 1" />
+      <h2>O Convite Macabro</h2>
+      <p>Scooby-Doo, Peppa Pig e Tom & Jerry recebem um convite misterioso para a Floresta Sombria.</p>
     </div>
+
+    <!-- Card 2 -->
+    <div class="story-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+      <img src="images/img2.png" alt="Card 2" />
+      <h2>A Névoa que Engole</h2>
+      <p>Uma névoa densa envolve os amigos enquanto eles entram na floresta, com risadas distorcidas ao fundo.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="story-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+      <img src="images/img3.png" alt="Card 3" />
+      <h2>O Espelho do Desespero</h2>
+      <p>Um espelho antigo reflete os maiores medos dos nossos heróis, ganhando vida no momento mais aterrorizante.</p>
+    </div>
+
+    <!-- Adicionar mais cards conforme necessário -->
   </main>
+
 </body>
 </html>
