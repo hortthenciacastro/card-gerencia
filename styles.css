@@ -12,29 +12,42 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
-
-/* Estilos do Header */
+/* Header com imagem */
 .header {
-  background: linear-gradient(90deg, #330000, #000);
-  padding: 30px;
-  text-align: center;
-  color: #ff5c5c;
+  position: relative;
   width: 100%;
+  text-align: center;
   margin-bottom: 40px;
 }
 
-.header .logo {
+.header-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Conteúdo sobreposto à imagem */
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff5c5c;
+  text-align: center;
+}
+
+.header-content .logo {
   width: 100px;
   margin-bottom: 20px;
 }
 
-.header h1 {
+.header-content h1 {
   margin: 0;
   font-size: 3rem;
   letter-spacing: 2px;
 }
 
-.header p {
+.header-content p {
   font-size: 1.3rem;
   margin-top: 10px;
   font-style: italic;
