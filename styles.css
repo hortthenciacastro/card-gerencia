@@ -12,22 +12,18 @@ body {
   min-height: 100vh;
   position: relative;
   animation: fadeIn 2s ease-in;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 body::before,
 body::after {
   content: '';
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   width: 200%;
@@ -36,7 +32,7 @@ body::after {
   opacity: 0.03;
   animation: moveFog 60s linear infinite;
   z-index: 0;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 body::after {
@@ -45,12 +41,8 @@ body::after {
 }
 
 @keyframes moveFog {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-50%, -50%);
-  }
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-50%, -50%); }
 }
 
 .header {
@@ -61,14 +53,14 @@ body::after {
   width: 100%;
   margin-bottom: 40px;
   position: relative;
-  z-index: 1; /* para ficar acima da névoa */
+  z-index: 1;
 }
 
 .header h1 {
   margin: 0;
   font-size: 3rem;
   letter-spacing: 2px;
-  font-family: 'Creepster', cursive; /* fonte temática */
+  font-family: 'Creepster', cursive;
   color: #ff1c1c;
   text-shadow: 2px 2px 4px #000;
 }
@@ -93,7 +85,7 @@ body::after {
 }
 
 .story-card {
-  background-color: rgba(26, 26, 26, 0.95); /* leve transparência para destacar névoa */
+  background-color: rgba(26, 26, 26, 0.95);
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 0 15px 3px #ff0000;
@@ -126,15 +118,12 @@ body::after {
   .header h1 {
     font-size: 2.3rem;
   }
-
   .story-card {
     padding: 15px;
   }
-
   .story-card h2 {
     font-size: 1.5rem;
   }
-
   .story-card p {
     font-size: 0.9rem;
   }
