@@ -12,7 +12,9 @@ body {
   min-height: 100vh;
   position: relative;
   animation: fadeIn 2s ease-in;
+  overflow-x: hidden; 
 }
+
 
 
 
